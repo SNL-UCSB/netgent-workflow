@@ -6,8 +6,10 @@ def generate_index():
     workflows_dir = "workflows"
     index_file = "workflows/index.json"
 
-    # Base URL for raw content - your app can use this to fetch the workflow.json
-    base_url = "https://raw.githubusercontent.com/{owner}/{repo}/main/workflows/"
+    # Base URL for raw content
+    base_url = (
+        "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/"
+    )
 
     workflows_list = []
 

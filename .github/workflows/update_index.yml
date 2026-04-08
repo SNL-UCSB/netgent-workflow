@@ -3,8 +3,8 @@ name: Update Workflow Index
 on:
   push:
     paths:
-      - 'workflows/*.json'
-      - '!workflows/index.json'
+      - "workflows/**"
+      - "!workflows/index.json"
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Generate Workflow Index
         run: python scripts/generate_workflow_index.py

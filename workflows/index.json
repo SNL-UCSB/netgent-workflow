@@ -1,0 +1,23 @@
+[
+  {
+    "id": "test_browser_workflow",
+    "name": "Browser Test",
+    "description": "Navigates to example.com for basic connectivity testing",
+    "version": "1.0.0",
+    "workflowlink": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_browser_workflow/workflow.json"
+  },
+  {
+    "id": "test_ndt_workflow",
+    "name": "NDT Speed Test",
+    "description": "Performs a standard NDT speed test for download and upload",
+    "version": "1.0.0",
+    "workflowlink": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_ndt_workflow/workflow.json"
+  },
+  {
+    "id": "test_shell_workflow",
+    "name": "Shell Ping Test",
+    "description": "Pings Google Public DNS to check basic network connectivity",
+    "version": "1.0.0",
+    "workflowlink": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_shell_workflow/workflow.json"
+  }
+]
