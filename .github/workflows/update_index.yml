@@ -1,0 +1,31 @@
+name: Update Workflow Index
+
+on:
+  push:
+    paths:
+      - 'workflows/*.json'
+      - '!workflows/index.json'
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Generate Workflow Index
+        run: python scripts/generate_workflow_index.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add workflows/index.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update workflow index" && git push)

@@ -1,0 +1,6 @@
+{
+  "name": "Browser Test",
+  "description": "Navigates to example.com for basic connectivity testing",
+  "version": "1.0.0",
+  "main": "workflow.json"
+}

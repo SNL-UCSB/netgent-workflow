@@ -1,0 +1,6 @@
+{
+  "name": "Shell Ping Test",
+  "description": "Pings Google Public DNS to check basic network connectivity",
+  "version": "1.0.0",
+  "main": "workflow.json"
+}

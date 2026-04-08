@@ -1,0 +1,6 @@
+{
+  "name": "NDT Speed Test",
+  "description": "Performs a standard NDT speed test for download and upload",
+  "version": "1.0.0",
+  "main": "workflow.json"
+}
