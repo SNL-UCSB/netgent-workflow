@@ -1,0 +1,28 @@
+{
+  "specification": "Watch a YouTube video at the specified 'url' for a duration of 'watch_time' seconds to test media streaming and playback stability.",
+  "states": [
+    {
+      "checks": [
+        {
+          "type": "always_true",
+          "params": {}
+        }
+      ],
+      "actions": [
+        {
+          "type": "go_to_url",
+          "params": {
+            "url": "{{url}}"
+          }
+        },
+        {
+          "type": "wait",
+          "params": {
+            "seconds": "{{watch_time}}"
+          }
+        }
+      ]
+    }
+  ],
+  "parameters": ["url", "watch_time"]
+}

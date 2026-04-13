@@ -1,0 +1,7 @@
+{
+  "name": "YouTube Watch Test",
+  "description": "Navigates to a YouTube video and watches it for a set duration. Parameter 'url': YouTube video link. Parameter 'watch_time': Duration to watch the video in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}
