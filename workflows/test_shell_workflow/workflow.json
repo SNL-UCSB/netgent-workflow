@@ -1,5 +1,5 @@
 {
-  "specification": "test shell workflow",
+  "specification": "Check network connectivity by sending ICMP echo requests (ping) to a target 'host' for a specified 'count' of packets.",
   "states": [
     {
       "checks": [
@@ -12,11 +12,12 @@
         {
           "type": "ping",
           "params": {
-            "host": "8.8.8.8",
-            "count": 1
+            "host": "{{host}}",
+            "count": "{{count}}"
           }
         }
       ]
     }
-  ]
+  ],
+  "parameters": ["host", "count"]
 }

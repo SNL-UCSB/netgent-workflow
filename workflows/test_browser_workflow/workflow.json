@@ -1,5 +1,5 @@
 {
-  "specification": "test browser workflow",
+  "specification": "Test browser connectivity by navigating to a target URL defined by the 'url' parameter.",
   "states": [
     {
       "checks": [
@@ -12,10 +12,11 @@
         {
           "type": "go_to_url",
           "params": {
-            "url": "https://example.com"
+            "url": "{{url}}"
           }
         }
       ]
     }
-  ]
+  ],
+  "parameters": ["url"]
 }

@@ -1,0 +1,6 @@
+{
+  "name": "iPerf Test",
+  "description": "Performs an iPerf test for measuring network performance",
+  "version": "1.0.0",
+  "main": "workflow.json"
+}

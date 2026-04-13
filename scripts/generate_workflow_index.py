@@ -28,6 +28,25 @@ def generate_index():
 
                         # Use the "main" entry from manifest, or default to workflow.json
                         main_file = manifest.get("main", "workflow.json")
+                        workflow_path = os.path.join(folder_path, main_file)
+
+                        # Extract specification and parameters from the workflow file
+                        specification = "No specification provided."
+                        parameters = []
+                        if os.path.exists(workflow_path):
+                            try:
+                                with open(workflow_path, "r") as wf:
+                                    workflow_data = json.load(wf)
+                                    specification = workflow_data.get(
+                                        "specification", specification
+                                    )
+                                    parameters = workflow_data.get(
+                                        "parameters", parameters
+                                    )
+                            except Exception as e:
+                                print(
+                                    f"Error reading workflow file {workflow_path}: {e}"
+                                )
 
                         workflows_list.append(
                             {
@@ -38,8 +57,10 @@ def generate_index():
                                 "description": manifest.get(
                                     "description", "No description provided."
                                 ),
+                                "specification": specification,
                                 "version": manifest.get("version", "1.0.0"),
-                                "workflowlink": f"{base_url}{folder_name}/{main_file}",
+                                "parameters": parameters,
+                                "link": f"{base_url}{folder_name}/{main_file}",
                             }
                         )
                 except Exception as e:

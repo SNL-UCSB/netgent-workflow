@@ -2,22 +2,49 @@
   {
     "id": "test_browser_workflow",
     "name": "Browser Test",
-    "description": "Navigates to example.com for basic connectivity testing",
+    "description": "Navigates to a specified URL using a browser to test connectivity and page loading. Parameter 'url': The destination address to visit (e.g., https://example.com).",
+    "specification": "Test browser connectivity by navigating to a target URL defined by the 'url' parameter.",
     "version": "1.0.0",
-    "workflowlink": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_browser_workflow/workflow.json"
+    "parameters": [
+      "url"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_browser_workflow/workflow.json"
+  },
+  {
+    "id": "test_iperf_workflow",
+    "name": "iPerf Test",
+    "description": "Performs an iPerf test for measuring network performance",
+    "specification": "Run an iPerf test to measure network bandwidth between the client and a server specified by the 'host' and 'port' parameters for a set 'duration' in seconds.",
+    "version": "1.0.0",
+    "parameters": [
+      "host",
+      "port",
+      "duration"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_iperf_workflow/workflow.json"
   },
   {
     "id": "test_ndt_workflow",
     "name": "NDT Speed Test",
     "description": "Performs a standard NDT speed test for download and upload",
+    "specification": "Perform a Network Diagnostic Test (NDT) to measure network performance, specifically testing 'download' and 'upload' speeds as configured.",
     "version": "1.0.0",
-    "workflowlink": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_ndt_workflow/workflow.json"
+    "parameters": [
+      "download",
+      "upload"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_ndt_workflow/workflow.json"
   },
   {
     "id": "test_shell_workflow",
     "name": "Shell Ping Test",
     "description": "Pings Google Public DNS to check basic network connectivity",
+    "specification": "Check network connectivity by sending ICMP echo requests (ping) to a target 'host' for a specified 'count' of packets.",
     "version": "1.0.0",
-    "workflowlink": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_shell_workflow/workflow.json"
+    "parameters": [
+      "host",
+      "count"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_shell_workflow/workflow.json"
   }
 ]

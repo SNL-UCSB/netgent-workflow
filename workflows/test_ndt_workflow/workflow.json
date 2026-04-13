@@ -1,5 +1,5 @@
 {
-  "specification": "test ndt workflow",
+  "specification": "Perform a Network Diagnostic Test (NDT) to measure network performance, specifically testing 'download' and 'upload' speeds as configured.",
   "states": [
     {
       "checks": [
@@ -12,11 +12,12 @@
         {
           "type": "ndt",
           "params": {
-            "download": true,
-            "upload": true
+            "download": "{{download}}",
+            "upload": "{{upload}}"
           }
         }
       ]
     }
-  ]
+  ],
+  "parameters": ["download", "upload"]
 }

@@ -1,6 +1,6 @@
 {
   "name": "Browser Test",
-  "description": "Navigates to example.com for basic connectivity testing",
+  "description": "Navigates to a specified URL using a browser to test connectivity and page loading. Parameter 'url': The destination address to visit (e.g., https://example.com).",
   "version": "1.0.0",
   "main": "workflow.json"
 }
