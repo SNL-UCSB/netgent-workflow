@@ -50,5 +50,18 @@
       "count"
     ],
     "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_shell_workflow/workflow.json"
+  },
+  {
+    "id": "test_youtube_workflow",
+    "name": "YouTube Watch Test",
+    "description": "Navigates to a YouTube video and watches it for a set duration. Parameter 'url': YouTube video link. Parameter 'watch_time': Duration to watch the video in seconds.",
+    "specification": "Watch a YouTube video at the specified 'url' for a duration of 'watch_time' seconds to test media streaming and playback stability.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "url",
+      "watch_time"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/test_youtube_workflow/workflow.json"
   }
 ]
