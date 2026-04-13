@@ -59,6 +59,7 @@ def generate_index():
                                 ),
                                 "specification": specification,
                                 "version": manifest.get("version", "1.0.0"),
+                                "type": manifest.get("type", "unknown"),
                                 "parameters": parameters,
                                 "link": f"{base_url}{folder_name}/{main_file}",
                             }

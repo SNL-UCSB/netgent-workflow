@@ -5,6 +5,7 @@
     "description": "Navigates to a specified URL using a browser to test connectivity and page loading. Parameter 'url': The destination address to visit (e.g., https://example.com).",
     "specification": "Test browser connectivity by navigating to a target URL defined by the 'url' parameter.",
     "version": "1.0.0",
+    "type": "browser",
     "parameters": [
       "url"
     ],
@@ -16,6 +17,7 @@
     "description": "Performs an iPerf test for measuring network performance",
     "specification": "Run an iPerf test to measure network bandwidth between the client and a server specified by the 'host' and 'port' parameters for a set 'duration' in seconds.",
     "version": "1.0.0",
+    "type": "shell",
     "parameters": [
       "host",
       "port",
@@ -29,6 +31,7 @@
     "description": "Performs a standard NDT speed test for download and upload",
     "specification": "Perform a Network Diagnostic Test (NDT) to measure network performance, specifically testing 'download' and 'upload' speeds as configured.",
     "version": "1.0.0",
+    "type": "shell",
     "parameters": [
       "download",
       "upload"
@@ -41,6 +44,7 @@
     "description": "Pings Google Public DNS to check basic network connectivity",
     "specification": "Check network connectivity by sending ICMP echo requests (ping) to a target 'host' for a specified 'count' of packets.",
     "version": "1.0.0",
+    "type": "shell",
     "parameters": [
       "host",
       "count"
