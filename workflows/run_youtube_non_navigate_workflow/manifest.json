@@ -1,0 +1,7 @@
+{
+  "name": "YouTube Watch (Direct URL)",
+  "description": "Navigates directly to a YouTube video URL and waits while it plays. Parameter 'url': YouTube video URL to load. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

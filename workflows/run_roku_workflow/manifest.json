@@ -1,0 +1,7 @@
+{
+  "name": "Roku Channel Watch",
+  "description": "Searches The Roku Channel for 'Mafia' and plays the first result. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Puffer Stream Watch",
+  "description": "Logs into Puffer (Stanford) and watches the Fox channel. Parameter 'username': Puffer account username. Parameter 'password': Puffer account password. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

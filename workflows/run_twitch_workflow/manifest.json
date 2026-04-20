@@ -1,0 +1,7 @@
+{
+  "name": "Twitch Stream Watch",
+  "description": "Opens Twitch and watches a featured live channel. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

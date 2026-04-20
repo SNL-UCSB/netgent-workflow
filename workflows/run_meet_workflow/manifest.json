@@ -1,0 +1,7 @@
+{
+  "name": "Google Meet Join",
+  "description": "Joins a Google Meet call. Parameter 'meeting_code': Meet meeting code from the URL. Parameter 'display_name': Name to show on the pre-join screen. Parameter 'wait_seconds': Time to remain in the meeting/lobby before stopping.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

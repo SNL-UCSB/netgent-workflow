@@ -1,0 +1,7 @@
+{
+  "name": "Tubi Stream Watch",
+  "description": "Searches Tubi for 'Lego' and plays the first result. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

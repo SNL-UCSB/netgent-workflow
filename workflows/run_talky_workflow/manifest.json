@@ -1,0 +1,7 @@
+{
+  "name": "Talky Room Join",
+  "description": "Joins a Talky video room. Parameter 'room_name': Talky room name to create or join. Parameter 'display_name': Name to show inside the room. Parameter 'wait_seconds': Duration to remain in the room before stopping.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

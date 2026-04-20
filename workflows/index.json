@@ -1,5 +1,140 @@
 [
   {
+    "id": "run_meet_workflow",
+    "name": "Google Meet Join",
+    "description": "Joins a Google Meet call. Parameter 'meeting_code': Meet meeting code from the URL. Parameter 'display_name': Name to show on the pre-join screen. Parameter 'wait_seconds': Time to remain in the meeting/lobby before stopping.",
+    "specification": "1. Go to 'https://meet.google.com/<meeting_code> '.\n    2. On the pre-join screen, if prompted for a name, type <secret>display_name</secret> into the display name input.\n    3. Click the 'Ask to join' button to request entry to the meeting.\n    4. Once in the meeting (or while waiting in the lobby to be admitted), wait for <secret>wait_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "meeting_code",
+      "display_name",
+      "wait_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_meet_workflow/workflow.json"
+  },
+  {
+    "id": "run_puffer_workflow",
+    "name": "Puffer Stream Watch",
+    "description": "Logs into Puffer (Stanford) and watches the Fox channel. Parameter 'username': Puffer account username. Parameter 'password': Puffer account password. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+    "specification": "1. Go to 'https://puffer.stanford.edu/accounts/login'.\n    2. On the Puffer login page, enter username <secret>username</secret> and password <secret>password</secret>.\n    3. If a consent or agreement checkbox is present, select it.\n    4. Submit the login form.\n    5. After login, click the 'Watch TV' button.\n    6. Wait for the channel page to finish loading.\n    7. Select the 'Fox' channel.\n    8. When the player screen is active and playback has started, wait for <secret>watch_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "username",
+      "password",
+      "watch_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_puffer_workflow/workflow.json"
+  },
+  {
+    "id": "run_roku_workflow",
+    "name": "Roku Channel Watch",
+    "description": "Searches The Roku Channel for 'Mafia' and plays the first result. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+    "specification": "1. Go to 'https://therokuchannel.roku.com/'\n    2. Search for 'Mafia' in the search bar.\n    3.  select the first result.\n    4. Once on the Movie/Show Page, press the Play/Resume button.\n    5. When in the player screen, wait for <secret>watch_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "watch_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_roku_workflow/workflow.json"
+  },
+  {
+    "id": "run_talky_workflow",
+    "name": "Talky Room Join",
+    "description": "Joins a Talky video room. Parameter 'room_name': Talky room name to create or join. Parameter 'display_name': Name to show inside the room. Parameter 'wait_seconds': Duration to remain in the room before stopping.",
+    "specification": "1. Go to 'https://talky.io/'.\n    2. If a consent, cookie, or welcome dialog appears, dismiss it.\n    3. In the room name input field on the landing page, type <secret>room_name</secret>.\n    4. Click the 'Start Call' button (or equivalent button that starts/joins the call).\n    5. If a screen appears asking for a display name or nickname, type <secret>display_name</secret> and submit.\n    6. If a permission, microphone, camera, or 'continue without devices' prompt appears, dismiss or continue through it to enter the room.\n    7. Once inside the room, wait for <secret>wait_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "room_name",
+      "display_name",
+      "wait_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_talky_workflow/workflow.json"
+  },
+  {
+    "id": "run_teams_workflow",
+    "name": "Microsoft Teams Join",
+    "description": "Joins a Microsoft Teams meeting via teams.live.com. Parameter 'meeting_code': Teams meeting code from the URL. Parameter 'display_name': Name to show on the pre-join screen. Parameter 'passcode': Meeting passcode if prompted. Parameter 'wait_seconds': Duration to remain in the meeting/lobby before stopping.",
+    "specification": "1. Go to 'https://teams.live.com/meet/<secret>meeting_code</secret>'.\n    2. If a consent, cookie, or welcome dialog appears, dismiss it.\n    3. On the pre-join screen, type <secret>display_name</secret> into the name / display name input.\n    4. Click the 'Join now' button.\n    5. If a meeting passcode prompt appears, type <secret>passcode</secret> into the passcode input.\n    6. Click the 'Rejoin call' button (or equivalent button that re-submits the join request with the passcode).\n    7. If the meeting still requires another confirmation, click the 'Join call' / 'Join' button again to enter the meeting.\n    8. Once inside the meeting (or while waiting in the lobby to be admitted), wait for <secret>wait_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "meeting_code",
+      "display_name",
+      "passcode",
+      "wait_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_teams_workflow/workflow.json"
+  },
+  {
+    "id": "run_tubi_workflow",
+    "name": "Tubi Stream Watch",
+    "description": "Searches Tubi for 'Lego' and plays the first result. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+    "specification": "1. Go to 'https://tubitv.com/'.\n    2. If a consent, cookie, or welcome dialog appears, dismiss it without signing in.\n    3. Click the magnifying-glass search icon in the top navigation to open the search overlay.\n    4. Type 'Lego' into the search textbox and press Enter.\n    5. Wait for the results grid to appear, then click the first title card.\n    6. Wait for the movie/show page to load, then click the Play button and wait <secret>watch_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "watch_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_tubi_workflow/workflow.json"
+  },
+  {
+    "id": "run_twitch_workflow",
+    "name": "Twitch Stream Watch",
+    "description": "Opens Twitch and watches a featured live channel. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+    "specification": "1. Go to 'https://www.twitch.tv/'.\n    2. If a consent, cookie, age, or sign-in dialog appears, dismiss it if possible without signing in.\n    3. On the homepage, select a visible live channel or featured video that is already shown there.\n    4. Wait for the player page to finish loading.\n    5. If playback has not started, press the Play button.\n    6. When the player is active and playback is running, wait for <secret>watch_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "watch_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_twitch_workflow/workflow.json"
+  },
+  {
+    "id": "run_youtube_non_navigate_workflow",
+    "name": "YouTube Watch (Direct URL)",
+    "description": "Navigates directly to a YouTube video URL and waits while it plays. Parameter 'url': YouTube video URL to load. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+    "specification": "1. Go to <secret>url</secret>.\n    2. If a consent, cookie, or welcome dialog appears, dismiss it without signing in.\n    3. Make sure the video plays\n    4. Wait for the video player page to finish loading.\n    5. If playback has not started, press the Play button.\n    6. When the video player is active and playback is running, wait for <secret>watch_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "url",
+      "watch_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_youtube_non_navigate_workflow/workflow.json"
+  },
+  {
+    "id": "run_zoho_workflow",
+    "name": "Zoho Meeting Join",
+    "description": "Joins a Zoho Meeting from the browser. Parameter 'meeting_code': Zoho meeting code from the URL. Parameter 'display_name': Name to show on the pre-join screen. Parameter 'wait_seconds': Duration to remain in the meeting/lobby before stopping.",
+    "specification": "1. Go to 'https://meeting.zoho.com/<secret>meeting_code</secret>'.\n    2. If a consent, cookie, or welcome dialog appears, dismiss it.\n    3. On the pre-join screen, type <secret>display_name</secret> into the name / display name input.\n    4. Click the 'Join meeting' button (or equivalent join/continue button that admits the participant).\n    5. Once inside the meeting (or while waiting to be let in), wait for <secret>wait_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "meeting_code",
+      "display_name",
+      "wait_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_zoho_workflow/workflow.json"
+  },
+  {
+    "id": "run_zoom_workflow",
+    "name": "Zoom Meeting Join",
+    "description": "Joins a Zoom meeting via the Zoom web client. Parameter 'meeting_id': Zoom meeting ID. Parameter 'passcode': Meeting passcode if prompted. Parameter 'display_name': Name to show on the join screen. Parameter 'wait_seconds': Duration to remain in the meeting/lobby before stopping.",
+    "specification": "1. Go to 'https://app.zoom.us/wc'.\n    2. If a consent, cookie, or welcome dialog appears, dismiss it.\n    3. Click the 'Join a Meeting' (or 'Join Meeting') button / link to open the join form.\n    4. In the meeting ID / meeting number input, type <secret>meeting_id</secret>.\n    5. Submit the meeting ID by clicking the 'Join' button (or pressing Enter) to advance to the next screen.\n    6. If the browser prompts for camera / microphone permissions, dismiss or continue through it \u2014 do not cancel.\n    7. If a passcode input appears, type <secret>passcode</secret> into the passcode field and submit it.\n    8. If a display name / 'Your Name' input appears, type <secret>display_name</secret> into it.\n    9. Click the final 'Join' / 'Join Meeting' button to enter the meeting.\n    10. Once inside the meeting (or while waiting in the lobby / waiting room to be admitted), wait for <secret>wait_seconds</secret> seconds before stopping.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "meeting_id",
+      "passcode",
+      "display_name",
+      "wait_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_zoom_workflow/workflow.json"
+  },
+  {
     "id": "test_browser_workflow",
     "name": "Browser Test",
     "description": "Navigates to a specified URL using a browser to test connectivity and page loading. Parameter 'url': The destination address to visit (e.g., https://example.com).",

@@ -1,0 +1,7 @@
+{
+  "name": "Zoom Meeting Join",
+  "description": "Joins a Zoom meeting via the Zoom web client. Parameter 'meeting_id': Zoom meeting ID. Parameter 'passcode': Meeting passcode if prompted. Parameter 'display_name': Name to show on the join screen. Parameter 'wait_seconds': Duration to remain in the meeting/lobby before stopping.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}
