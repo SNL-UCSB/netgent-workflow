@@ -1,5 +1,20 @@
 [
   {
+    "id": "run_hulu_workflow",
+    "name": "Hulu Watch",
+    "description": "Logs into Hulu, selects a profile, opens the target watch page, and watches playback while collecting stats. Requires HULU_EMAIL, HULU_PASSWORD, and HULU_PROFILE_NAME in the runtime environment. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+    "specification": "1. Go to 'https://auth.hulu.com/web/login'.\n    2. If Hulu asks for an email address, enter the HULU_EMAIL environment value and continue.\n    3. If Hulu asks for a password, enter the HULU_PASSWORD environment value, submit the login form, and open 'https://www.hulu.com/watch/60da223c-d2a0-411a-95c9-665a839371f9'.\n    4. If Hulu requires an email passcode or additional verification, stop because manual verification is required.\n    5. If Hulu asks who's watching, choose the profile named by HULU_PROFILE_NAME and return to the watch page.\n    6. When the video player is available, start playback if needed, log playback stats to /out/hulu_watch_stats.jsonl every 2 seconds, wait for <secret>watch_seconds</secret> seconds, then stop logging.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "HULU_EMAIL",
+      "HULU_PASSWORD",
+      "HULU_PROFILE_NAME",
+      "watch_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_hulu_workflow/workflow.json"
+  },
+  {
     "id": "run_meet_workflow",
     "name": "Google Meet Join",
     "description": "Joins a Google Meet call. Parameter 'meeting_code': Meet meeting code from the URL. Parameter 'display_name': Name to show on the pre-join screen. Parameter 'wait_seconds': Time to remain in the meeting/lobby before stopping.",
