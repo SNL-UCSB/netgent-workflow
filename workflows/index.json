@@ -96,6 +96,18 @@
     "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_tubi_workflow/workflow.json"
   },
   {
+    "id": "run_twitch_247jynxzi_workflow",
+    "name": "Twitch 247jynxzi Watch",
+    "description": "Opens the 247jynxzi Twitch channel and watches the live stream while collecting playback stats. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+    "specification": "1. Go to 'https://www.twitch.tv/247jynxzi'.\n    2. Wait for Twitch and the channel player to load.\n    3. Do not click the video player or ad overlays.\n    4. When the video player is available, log Twitch playback stats to /out/twitch_247jynxzi_stats.jsonl every 2 seconds.\n    5. Watch the stream for <secret>watch_seconds</secret> seconds, then stop logging.",
+    "version": "1.0.0",
+    "type": "browser",
+    "parameters": [
+      "watch_seconds"
+    ],
+    "link": "https://raw.githubusercontent.com/SNL-UCSB/netgent-workflow/main/workflows/run_twitch_247jynxzi_workflow/workflow.json"
+  },
+  {
     "id": "run_twitch_workflow",
     "name": "Twitch Stream Watch",
     "description": "Opens Twitch and watches a featured live channel. Parameter 'watch_seconds': Duration to watch playback in seconds.",
