@@ -1,0 +1,7 @@
+{
+  "name": "Twitch 247jynxzi Watch",
+  "description": "Opens the 247jynxzi Twitch channel and watches the live stream while collecting playback stats. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}

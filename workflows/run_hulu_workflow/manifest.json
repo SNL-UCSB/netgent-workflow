@@ -1,0 +1,7 @@
+{
+  "name": "Hulu Watch",
+  "description": "Logs into Hulu, selects a profile, opens the target watch page, and watches playback while collecting stats. Requires HULU_EMAIL, HULU_PASSWORD, and HULU_PROFILE_NAME in the runtime environment. Parameter 'watch_seconds': Duration to watch playback in seconds.",
+  "version": "1.0.0",
+  "type": "browser",
+  "main": "workflow.json"
+}
